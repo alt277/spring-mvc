@@ -64,7 +64,6 @@ public class ProductController {
         productService.saveOrUpdate(newProduct);
         return "redirect:/products/";
     }
-
     @GetMapping("/edit/{id}")
     public String showEditForm(
             @PathVariable Long id, Model model
